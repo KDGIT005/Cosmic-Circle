@@ -9,7 +9,6 @@
 ![Framer Motion](https://img.shields.io/badge/Framer_Motion-13-FF0055?style=for-the-badge&logo=framer&logoColor=white)
 
 <br />
-
 ### 🌐 **[https://cosmic-circle-two.vercel.app/](https://cosmic-circle-two.vercel.app/)**
 
 [![Try Live Demo](https://img.shields.io/badge/⚡%20LAUNCH%20LIVE%20DEMO-cosmic--circle--two.vercel.app-F59E0B?style=for-the-badge&logo=vercel&logoColor=black&labelColor=7C3AED)](https://cosmic-circle-two.vercel.app/)
