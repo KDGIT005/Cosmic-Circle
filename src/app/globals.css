@@ -1,0 +1,179 @@
+@import "tailwindcss";
+
+:root {
+  /* AstroLive Theme */
+  --cream: #F5F0FF;
+  --cream-dark: #EDE5FF;
+  --gold: #F97316;
+  --gold-light: #FFF3E0;
+  --gold-glow: #F9731633;
+  --lavender: #A855F7;
+  --lavender-light: #EDE5FF;
+  --indigo: #7C3AED;
+  --dusty-rose: #EC4899;
+  --dusty-rose-light: #FDF2F8;
+  --charcoal: #1E1B2E;
+  --charcoal-light: #6B5F85;
+  --background: var(--cream);
+  --foreground: var(--charcoal);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-cream: #F5F0FF;
+  --color-cream-dark: #EDE5FF;
+  --color-gold: #F97316;
+  --color-gold-light: #FFF3E0;
+  --color-gold-glow: #F9731633;
+  --color-lavender: #A855F7;
+  --color-lavender-light: #EDE5FF;
+  --color-indigo: #7C3AED;
+  --color-dusty-rose: #EC4899;
+  --color-dusty-rose-light: #FDF2F8;
+  --color-charcoal: #1E1B2E;
+  --color-charcoal-light: #6B5F85;
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-playfair);
+}
+
+/* ─── Base ─── */
+body {
+  background: var(--cream);
+  color: var(--charcoal);
+  font-family: var(--font-inter), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ─── Constellation subtle background ─── */
+.bg-constellation {
+  background-image: url("data:image/svg+xml,%3Csvg width='400' height='400' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='stars' width='100' height='100' patternUnits='userSpaceOnUse'%3E%3Ccircle cx='10' cy='20' r='0.8' fill='%23A855F7' opacity='0.12'/%3E%3Ccircle cx='50' cy='10' r='0.6' fill='%237C3AED' opacity='0.1'/%3E%3Ccircle cx='80' cy='40' r='0.7' fill='%23A855F7' opacity='0.08'/%3E%3Ccircle cx='30' cy='70' r='0.5' fill='%23EC4899' opacity='0.08'/%3E%3Ccircle cx='70' cy='80' r='0.9' fill='%23A855F7' opacity='0.1'/%3E%3Ccircle cx='90' cy='60' r='0.4' fill='%23EC4899' opacity='0.06'/%3E%3Cline x1='10' y1='20' x2='50' y2='10' stroke='%23A855F7' stroke-width='0.3' opacity='0.06'/%3E%3Cline x1='50' y1='10' x2='80' y2='40' stroke='%23A855F7' stroke-width='0.3' opacity='0.06'/%3E%3Cline x1='30' y1='70' x2='70' y2='80' stroke='%237C3AED' stroke-width='0.3' opacity='0.04'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='400' height='400' fill='url(%23stars)'/%3E%3C/svg%3E");
+}
+
+/* ─── Blur/frosted glass ─── */
+.glass {
+  background: rgba(245, 240, 255, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(124, 58, 237, 0.12);
+}
+
+.glass-dark {
+  background: rgba(30, 27, 46, 0.05);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* ─── Blur overlay for locked content ─── */
+.blur-lock {
+  filter: blur(6px);
+  user-select: none;
+  pointer-events: none;
+}
+
+/* ─── Premium card styling ─── */
+.card-premium {
+  background: white;
+  border-radius: 1.25rem;
+  box-shadow:
+    0 1px 3px rgba(124, 58, 237, 0.04),
+    0 4px 16px rgba(124, 58, 237, 0.06);
+  padding: 1.5rem;
+}
+
+.card-premium-gold {
+  background: linear-gradient(135deg, #FAF5FF 0%, #FDF2F8 50%, #FFF7ED 100%);
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  border-radius: 1.25rem;
+  box-shadow:
+    0 1px 3px rgba(168, 85, 247, 0.06),
+    0 4px 16px rgba(168, 85, 247, 0.1);
+  padding: 1.5rem;
+}
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--lavender);
+  border-radius: 4px;
+}
+
+/* ─── Animations ─── */
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes pulse-glow {
+
+  0%,
+  100% {
+    box-shadow: 0 0 8px rgba(124, 58, 237, 0.2);
+  }
+
+  50% {
+    box-shadow: 0 0 24px rgba(168, 85, 247, 0.4);
+  }
+}
+
+@keyframes orbit {
+  from {
+    transform: rotate(0deg) translateX(40px) rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg) translateX(40px) rotate(-360deg);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.animate-orbit {
+  animation: orbit 8s linear infinite;
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, transparent 0%, rgba(124, 58, 237, 0.08) 50%, transparent 100%);
+  background-size: 200% 100%;
+  animation: shimmer 2s ease-in-out infinite;
+}
+
+/* ─── Persona switcher ─── */
+.persona-switcher {
+  position: fixed;
+  bottom: 5.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+}
