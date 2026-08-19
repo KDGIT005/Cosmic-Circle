@@ -8,11 +8,27 @@
 ![Tailwind CSS v4](https://img.shields.io/badge/Tailwind-CSS_v4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Framer Motion](https://img.shields.io/badge/Framer_Motion-13-FF0055?style=for-the-badge&logo=framer&logoColor=white)
 
+<br />
+
+# 🚀 [👉 VISIT LIVE DEMO APP HERE 👈](https://cosmic-circle-two.vercel.app/)
+### 🌐 **[https://cosmic-circle-two.vercel.app/](https://cosmic-circle-two.vercel.app/)**
+
+[![Try Live Demo](https://img.shields.io/badge/⚡%20LAUNCH%20LIVE%20DEMO-cosmic--circle--two.vercel.app-F59E0B?style=for-the-badge&logo=vercel&logoColor=black&labelColor=7C3AED)](https://cosmic-circle-two.vercel.app/)
+
+<br />
+
 **Transforming one-off astrology consultations into viral, ongoing social relationship companions.**
 
-[✨ Live Demo](#-getting-started) • [📖 Product Strategy](#-product-concept--growth-engine) • [🚀 Interactive User Flow](#-interactive-demo-flow) • [🛠️ Architecture](#%EF%B8%8F-tech-stack--architecture)
+[⚡ Try Live Demo](https://cosmic-circle-two.vercel.app/) • [📖 Product Strategy](#-product-concept--growth-engine) • [🚀 Interactive User Flow](#-interactive-demo-flow) • [🛠️ Architecture](#%EF%B8%8F-tech-stack--architecture)
 
 </div>
+
+---
+
+> ### 🌟 **Try the Live Interactive Experience:**
+> 👉 **[https://cosmic-circle-two.vercel.app/](https://cosmic-circle-two.vercel.app/)**
+> 
+> *Test the entire loop directly on your phone or browser: from Rhea's consultation recap, creating a Circle for Mom, switching personas with the floating button, to unlocking the cosmic orbit reveal animation!*
 
 ---
 
@@ -62,7 +78,7 @@ graph TD
 
 ## 📱 Features & Interactive Demo Flow
 
-Experience the entire end-to-end loop directly in the prototype:
+Experience the entire end-to-end loop directly in the prototype at **[cosmic-circle-two.vercel.app](https://cosmic-circle-two.vercel.app/)**:
 
 | Stage | Screen / Flow | Key Capabilities |
 | :--- | :--- | :--- |
@@ -80,6 +96,7 @@ Experience the entire end-to-end loop directly in the prototype:
 
 Built with modern, high-performance web standards:
 
+- **Live URL**: [https://cosmic-circle-two.vercel.app/](https://cosmic-circle-two.vercel.app/)
 - **Framework**: [Next.js 16 (App Router + Turbopack)](https://nextjs.org/)
 - **UI Library**: [React 19](https://react.dev/)
 - **Styling**: [Tailwind CSS v4](https://tailwindcss.com/) with curated HSL color tokens and custom glassmorphism
@@ -127,28 +144,24 @@ cosmic-circles/
 
 ## 🚀 Getting Started
 
-### Prerequisites
-- Node.js 18.17+ or 20+
-- npm, yarn, or pnpm
+### ⚡ Live Demo (No Install Needed)
+Visit **[https://cosmic-circle-two.vercel.app/](https://cosmic-circle-two.vercel.app/)** to try it immediately on mobile or desktop!
 
-### 1. Clone & Install
+### Local Setup
 ```bash
+# 1. Clone & Install
 git clone https://github.com/KDGIT005/Cosmic-Circle.git
 cd Cosmic-Circle
 npm install
-```
 
-### 2. Run Local Development Server
-```bash
+# 2. Run Local Development Server
 npm run dev
-```
-Open [http://localhost:3000](http://localhost:3000) on your browser (or use responsive device mode at `~390px` width for the mobile experience).
 
-### 3. Production Build
-```bash
+# 3. Production Build
 npm run build
 npm run start
 ```
+Open [http://localhost:3000](http://localhost:3000) on your browser.
 
 ---
 
@@ -165,6 +178,8 @@ npm run start
 ---
 
 <div align="center">
+
+### 🌌 [Experience Cosmic Circles Live on Vercel](https://cosmic-circle-two.vercel.app/)
 
 Crafted with 💜 for **AstroLive** • Built for real-world growth & engagement
 
